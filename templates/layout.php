@@ -16,13 +16,13 @@
 <meta name="author" content="Pixnative">
 <meta name="application-name" content="Pixnative Website">
 <meta name="project-id" content="73660358-cc59-4934-bb59-cea6df0ef47a">
-<meta name="version" content="1.0.1">
+<meta name="version" content="1.0.2">
 <meta name="revision" content="e10e7f98">
 <meta name="last-modified" content="<?= e($today) ?>">
 <meta name="theme-color" content="#9b2d20">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%239b2d20'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='19' text-anchor='middle' fill='%23f3e9d2'%3EHR%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="/assets/css/style.css">
-<script src="/assets/js/site.js" defer></script>
+<link rel="stylesheet" href="/assets/css/style.css?v=<?= e((string) (filemtime(__DIR__ . "/../public/assets/css/style.css") ?: 0)) ?>">
+<script src="/assets/js/site.js?v=<?= e((string) (filemtime(__DIR__ . "/../public/assets/js/site.js") ?: 0)) ?>" defer></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoPartsStore","name":"H. Rasmussen Biler","url":"https://hr-biler-brovst.dk/","telephone":"+4520713121","email":"hr-biler@auto-nord.dk","foundingDate":"1907-04-01","address":{"@type":"PostalAddress","streetAddress":"Vestergade 12","postalCode":"9460","addressLocality":"Brovst","addressCountry":"DK"}}</script>
 </head>
 <body class="page-<?= e($path === '' ? 'forside' : $path) ?>">
