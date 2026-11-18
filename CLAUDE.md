@@ -26,3 +26,11 @@ branch. Only one task of this project runs at a time. Each task has a `prompt` a
   preview website, then a person reviews the task, and Pixnative opens the pull request to the default branch when they approve.
 - You run unattended: nobody answers questions. Make a reasonable assumption, note it under
   "## Agent notes" in the task description and carry on.
+
+## Project layout and working rules
+
+- `public/index.php` is the front controller; pages are in `templates/` (layout.php plus one file per page). Add a page by adding it to `$pages` in index.php, a template, and a sitemap entry.
+- Design concept "Reservedelshylden": the red-edged shelf label (`.label`, `.tag` in `public/assets/css/style.css`), brick red and kraft beige, monospace part-number type. Photos are graded and cropped with ImageMagick (`convert ... -modulate 100,85 -sigmoidal-contrast 3,50% -fill '#b3261e' -tint 12`) from the originals on the old site.
+- No build step, no external dependencies, no cookies. Run locally: `php -S localhost:8080 -t public`.
+- Every page carries the Pixnative meta tags in `templates/layout.php`; raise `version`, set `revision` and `last-modified` on each task.
+- Open placeholder: `[Åbningstider]` on the contact page.
