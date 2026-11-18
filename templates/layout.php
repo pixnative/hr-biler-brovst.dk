@@ -16,7 +16,7 @@
 <meta name="author" content="Pixnative">
 <meta name="application-name" content="Pixnative Website">
 <meta name="project-id" content="73660358-cc59-4934-bb59-cea6df0ef47a">
-<meta name="version" content="1.0.0">
+<meta name="version" content="1.0.1">
 <meta name="revision" content="e10e7f98">
 <meta name="last-modified" content="<?= e($today) ?>">
 <meta name="theme-color" content="#9b2d20">
