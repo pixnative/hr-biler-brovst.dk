@@ -233,13 +233,13 @@ address { font-style: normal; }
 @media (min-width: 800px) { .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; } }
 
 /* Reveal */
-.js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s, transform .6s; }
-.js .reveal.in { opacity: 1; transform: none; }
+.js .reveal { transform: translateY(24px); transition: transform .6s; }
+.js .reveal.in { transform: none; }
 .js .tilt.reveal.in { transform: rotate(-1.5deg); }
 .js .tilt-r.reveal.in { transform: rotate(1.5deg); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
-  .js .reveal { opacity: 1; transform: none; }
+  .js .reveal { transform: none; }
 }

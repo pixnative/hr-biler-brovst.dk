@@ -33,7 +33,7 @@
 
 <section class="band band-kraft">
   <div class="wrap split">
-    <div class="split-img tilt reveal"><?= img('hylde', 'Nærbillede af hylde med papkasser og røde varemærkater på lageret', 750, 500) ?></div>
+    <div class="split-img tilt reveal"><?= img('hylde', 'Nærbillede af hylde med papkasser og røde varemærkater på lageret', 750, 500, true) ?></div>
     <div class="reveal">
       <p class="label">Hylde B · Reservedele</p>
       <h2>Også til 80’er- og 90’er-modellerne.</h2>
@@ -51,9 +51,9 @@
 </section>
 
 <section class="details" aria-label="Detaljer">
-  <figure class="detail reveal"><?= img('jaguar', 'Rød Jaguar parkeret foran værkstedsbygningen', 460, 400) ?><figcaption class="label">Jaguar</figcaption></figure>
-  <figure class="detail reveal"><?= img('landrover', 'Land Rover set forfra foran de store ruder', 500, 375) ?><figcaption class="label">Land Rover</figcaption></figure>
-  <figure class="detail reveal"><?= img('skilt', 'Skiltet Brugte Biler ved døren', 560, 320) ?><figcaption class="label">Brugte biler</figcaption></figure>
+  <figure class="detail reveal"><?= img('jaguar', 'Rød Jaguar parkeret foran værkstedsbygningen', 460, 400, true) ?><figcaption class="label">Jaguar</figcaption></figure>
+  <figure class="detail reveal"><?= img('landrover', 'Land Rover set forfra foran de store ruder', 500, 375, true) ?><figcaption class="label">Land Rover</figcaption></figure>
+  <figure class="detail reveal"><?= img('skilt', 'Skiltet Brugte Biler ved døren', 560, 320, true) ?><figcaption class="label">Brugte biler</figcaption></figure>
 </section>
 
 <section class="band band-dark">
@@ -64,7 +64,7 @@
       <p>Alt det, firmaet har lavet siden 1907, har haft samme kendetegn: høj faglighed og personlig service med kunden i centrum.</p>
       <p><a class="link-arrow" href="/profil">Læs historien</a></p>
     </div>
-    <div class="split-img tilt-r reveal"><?= img('portraet', 'Indrammet portræt af tidligere ejer på kontorets væg', 570, 630) ?></div>
+    <div class="split-img tilt-r reveal"><?= img('portraet', 'Indrammet portræt af tidligere ejer på kontorets væg', 570, 630, true) ?></div>
   </div>
 </section>
 

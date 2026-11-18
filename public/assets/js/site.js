@@ -19,8 +19,11 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0, rootMargin: '0px 0px -5% 0px' });
     items.forEach(function (el) { observer.observe(el); });
+    window.setTimeout(function () {
+      items.forEach(function (el) { el.classList.add('in'); });
+    }, 1500);
   } else {
     items.forEach(function (el) { el.classList.add('in'); });
   }
